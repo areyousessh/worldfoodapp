@@ -8,15 +8,15 @@ export const styles = (theme: Theme) => StyleSheet.create({
         alignItems: "center",
         backgroundColor: theme.colors.primaryButton,
         width: "70%",
-        height: theme.spacing.xl,
-        borderRadius: theme.spacing.s,
+        height: theme.spacing.mm,
+        borderRadius: theme.spacing.ss,
         borderColor: theme.colors.outline,
         borderWidth: 0.5,
-        marginTop: theme.spacing.xl
+        marginTop: theme.spacing.mm
     },
     buttonTitle: {
         color: theme.colors.buttonText,
-        fontFamily: theme.textVariants.title,
+        fontFamily: theme.textVariants.weight700,
         fontSize: theme.textVariants.size4,
     }
 })

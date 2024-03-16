@@ -2,7 +2,7 @@ import React from "react"
 import { Home } from "@screens/home"
 import { createStackNavigator } from "@react-navigation/stack"
 import { OnBoarding } from "@screens/onBoarding"
-import { SignIn } from "@screens/login"
+import { SignIn } from "@screens/signIn"
 
 
 const Stack = createStackNavigator()
