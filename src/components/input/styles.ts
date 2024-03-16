@@ -9,6 +9,6 @@ export const styles = (theme: Theme) => StyleSheet.create({
         borderColor: theme.colors.outline,
         marginBottom: theme.spacing.m,
         borderRadius: theme.spacing.s,
-        textAlign: 'center'
+        textAlign: 'left'
     }
 })
