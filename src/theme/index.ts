@@ -1,7 +1,7 @@
 const palette = {
   whitePrimary: "#FFFFFF",
   greenPrimary: "#1FCC79",
-  redPrimary: "#FF5872",
+  redPrimary: "#FF5842",
   greyPrimary: "#2E3E5C",
   secondaryGrey: "#9FA5C0",
   thirdGrey: "#D0DBEA",

@@ -12,14 +12,24 @@ export const styles = (theme: Theme) => StyleSheet.create({
       fontFamily: theme.textVariants.weight400,
       fontSize: theme.spacing.s,
       color: theme.colors.mainText,
-      marginTop: theme.spacing.s
+      marginTop: theme.spacing.s,
+      marginBottom: theme.spacing.s
    },
    subButton: {
       marginTop: theme.spacing.s
    },
    buttonText: {
-      fontFamily: theme.textVariants.weight300,
+      fontFamily: theme.textVariants.weight600,
       color: theme.colors.mainText
-   }
+   },
+   forgotPassword: {
+      fontFamily: theme.textVariants.weight600,
+      fontSize: theme.spacing.s,
+      color: theme.colors.mainText,
+      marginBottom: theme.spacing.s,
+   },
+
+ 
+
 
 })
