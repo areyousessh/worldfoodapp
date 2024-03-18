@@ -1,4 +1,4 @@
-import { TextInput, TextInputProps } from "react-native";
+import { Image, TextInput, TextInputProps, View } from "react-native";
 import {styles} from './styles'
 import { useTheme } from "@theme/useTheme";
 import { ReactNode } from "react";
@@ -13,9 +13,8 @@ export function RInput({value, placeholder, children, ...rest}: RTextInputProps)
     const {theme} = useTheme()
     const style = styles(theme)
     return (
-        <TextInput style={style.input} placeholder={placeholder} placeholderTextColor={theme.colors.secondaryText} autoCapitalize="none" autoComplete="email" blurOnSubmit multiline={false} {...rest}>
-            {children}
-            {value}
-        </TextInput>
+            <TextInput style={style.input} placeholder={placeholder} placeholderTextColor={theme.colors.secondaryText} autoCapitalize="none" autoComplete="email" blurOnSubmit multiline={false} {...rest}>
+                {value}
+            </TextInput>
     )
 }

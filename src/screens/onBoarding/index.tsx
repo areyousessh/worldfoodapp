@@ -12,12 +12,9 @@ export function OnBoarding() {
     const navigation = useNavigation<propStack>()
     return (
         <RContainer>
-            <Text style={style.title}>
-                Vamos cozinhar
-            </Text>
-            <Text style={style.subtitle}>
-                junte-se a comunidade
-            </Text>
+            <Text style={style.title}>Vamos cozinhar</Text>
+            <Text style={style.subtitle}>junte-se a comunidade</Text>
+            <Text style={style.subtitle2}>aprenda diversas receitas </Text>
             <RButton onPress={() => navigation.navigate('SignIn')} value="Vamos lá"/>
         </RContainer>
     )

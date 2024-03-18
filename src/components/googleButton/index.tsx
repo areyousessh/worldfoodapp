@@ -1,6 +1,6 @@
 import { useTheme } from "@theme/useTheme";
 import { ReactNode } from "react";
-import { Text } from "react-native";
+import { Image, Text } from "react-native";
 import { TouchableOpacity } from "react-native";
 import { styles } from "./styles";
 
@@ -13,7 +13,7 @@ export function GoogleButton({value, children}: googleButtonProps) {
     const style = styles(theme)
     return (
         <TouchableOpacity style={style.container}>
-            {children}
+            <Image source={require('../../assets/googlelogo.png')}/>
             <Text style={style.buttonTitle}>
                 {value}
             </Text>

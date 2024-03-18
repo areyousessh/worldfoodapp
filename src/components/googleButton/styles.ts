@@ -18,5 +18,6 @@ export const styles = (theme: Theme) => StyleSheet.create({
         color: theme.colors.buttonText,
         fontFamily: theme.textVariants.weight700,
         fontSize: theme.textVariants.size4,
+        marginLeft: theme.spacing.s
     }
 })

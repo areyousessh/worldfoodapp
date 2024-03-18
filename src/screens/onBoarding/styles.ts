@@ -11,6 +11,13 @@ export const styles = (theme: Theme) => StyleSheet.create({
         color: theme.colors.secondaryText,
         fontFamily: theme.textVariants.weight400,
         fontSize: theme.textVariants.size4,
-        marginTop: theme.spacing.s
+        marginTop: theme.spacing.s,
+        marginBottom: theme.spacing.s
+    },
+    subtitle2: {
+        color: theme.colors.secondaryText,
+        fontFamily: theme.textVariants.weight400,
+        fontSize: theme.textVariants.size4,
+        marginBottom: theme.spacing.s
     }
 })
