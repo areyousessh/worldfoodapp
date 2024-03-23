@@ -1,15 +1,28 @@
 import { ReactNode, useState } from "react";
-import { ScrollView, ScrollViewProps } from "react-native";
+import { ScrollView, ScrollViewProps, Text } from "react-native";
+import { TouchableOpacity } from "react-native-gesture-handler";
+import { styles } from "./styles";
+import { useTheme } from "@theme/useTheme";
 
 type RScrollViewProps = ScrollViewProps & {
-    children: ReactNode
+    data: any[]
 }
 
-export function RScrollView({children}: RScrollViewProps) {
+export function RScrollView({data}: RScrollViewProps) {
+    const { theme } = useTheme()
+    const style = styles(theme)
     const [horizontalPos] = useState<boolean>(true)
     return (
         <ScrollView horizontal={horizontalPos}>
-            {children}
+             {data.map((value) => {
+                return (
+                    <TouchableOpacity key={value.id} style={style.buttonCategory}>
+                        <Text style={style.buttonText}>
+                            {value.name}
+                        </Text>
+                    </TouchableOpacity>
+                )
+             })}
         </ScrollView>
     )
 }
