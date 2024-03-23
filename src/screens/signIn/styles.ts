@@ -28,6 +28,13 @@ export const styles = (theme: Theme) => StyleSheet.create({
       color: theme.colors.mainText,
       marginBottom: theme.spacing.s,
    },
+   inputContainer: {
+      marginBottom: theme.spacing.s,
+      width: '100%',
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+   }
 
  
 
