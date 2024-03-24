@@ -22,7 +22,8 @@ module.exports = {
           "@theme": "./src/theme",
           "@service": "./src/service",
           "@utils": "./src/utils",
-          "@assets": "./src/assets"
+          "@assets": "./src/assets",
+          "@hooks": "./src/hooks",
         },
       },
     ],

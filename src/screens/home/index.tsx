@@ -5,12 +5,12 @@ import { RInput } from "@components/input"
 import { Text, View } from "react-native"
 import { RScrollView } from "@components/scrollView"
 import { FakeData } from "@utils/fakedata"
-import { TouchableOpacity } from "react-native-gesture-handler"
-import { SafeAreaView } from "react-native"
+import { TouchableOpacity } from "react-native"
 
 export function Home() {
     const { theme } = useTheme()
     const style = styles(theme)
+
     return (
         <RContainer>
             <View style={style.inputContainer}>

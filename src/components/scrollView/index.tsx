@@ -16,7 +16,7 @@ export function RScrollView({data}: RScrollViewProps) {
         <ScrollView horizontal={horizontalPos}>
              {data.map((value) => {
                 return (
-                    <TouchableOpacity key={value.id} style={style.buttonCategory}>
+                    <TouchableOpacity key={value.id} style={style.buttonCategory} activeOpacity={0.7}>
                         <Text style={style.buttonText}>
                             {value.name}
                         </Text>
