@@ -1,21 +1,22 @@
-import { useAxios } from "@hooks/useAxios";
-import { useEffect } from "react";
+import axios from "axios";
 
-export function getRecipes() {
-    const {makeRequest} = useAxios()
-    const fetchData = async () => {
+type Recipe = {
+    id: number
+    name: string;
+    ingredients: string
+    images: string
+    description: string
+    country: string
+    details: string
+    howTo: string
+    video: string
+}
+
+export async function getRecipes() {
     try {
-        const response = await makeRequest({
-            url: '/recipes',
-            method: 'get'
-        })
-        console.log(response.data)
-        } catch (e: any) {
+        const data: Recipe[] = await axios.get("http://localhost:8000/api/recipes")
+        return data
+    } catch (e: any) {
         console.log(e.message)
-        }
-    } 
-
-    useEffect(() => {
-        fetchData()
-    }, [])
+    }
 }

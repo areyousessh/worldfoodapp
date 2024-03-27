@@ -41,7 +41,6 @@ export const styles = (theme: Theme) => StyleSheet.create({
         width: "100%",
         justifyContent: "center",
         alignItems: "center",
-        marginBottom: theme.spacing.s,
         marginTop: theme.spacing.s
 
     },
@@ -56,5 +55,14 @@ export const styles = (theme: Theme) => StyleSheet.create({
         textAlign: 'center',
         color: theme.colors.mainBackground,
         fontFamily: theme.textVariants.weight500
+    },
+
+    flatList: {
+        backgroundColor: theme.colors.primaryButton,
+        display: "flex",
+        flex: 1,
+        alignItems: "center",
+        justifyContent: "center",
+        height: "30%"
     }
 })

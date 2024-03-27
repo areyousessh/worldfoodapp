@@ -10,7 +10,7 @@ export const styles = (theme: Theme) => StyleSheet.create({
         justifyContent: 'center',
         borderRadius: theme.spacing.s,
         marginTop: theme.spacing.m,
-        marginBottom: theme.spacing.m,
+        marginBottom: theme.spacing.s,
         marginLeft: theme.spacing.ss,
         borderWidth: 1,
         borderColor: theme.colors.outline
